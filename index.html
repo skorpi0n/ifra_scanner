@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IFRA Scanner">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <title>IFRA Scanner</title>
+  <style>
+    :root{--ink:#172c26;--muted:#64736d;--paper:#f4f1e9;--card:#fffdf8;--line:#d9ded5;--green:#23634e;--lime:#d3ef76;--red:#a43a32}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{max-width:900px;margin:auto;padding:28px 18px 60px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:22px}
+    h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1;margin:5px 0 10px;letter-spacing:-.05em}.eyebrow{text-transform:uppercase;font-size:.75rem;font-weight:800;letter-spacing:.16em;color:var(--green)}
+    p{margin:.35em 0;color:var(--muted)}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 20px #22332208}
+    h2{font-size:1.1rem;margin:0 0 12px}.camera{width:100%;aspect-ratio:4/3;background:#13231e;border-radius:12px;object-fit:cover;display:block}.camwrap{position:relative}
+    .hint{font-size:.9rem;margin:9px 0 14px}.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}button,.button{border:0;border-radius:10px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer;background:var(--green);color:white}.secondary{background:#e8eee6;color:var(--ink)}.danger{color:var(--red)}
+    label{display:block;font-size:.85rem;font-weight:700;margin:13px 0 5px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px 12px;background:white;color:var(--ink);font:inherit}textarea{min-height:70px;resize:vertical}.manual{display:flex;gap:8px}.manual input{flex:1;min-width:0}
+    .status{min-height:24px;font-size:.88rem;color:var(--muted);margin-top:6px}.status.error{color:var(--red)}.result{border-top:1px solid var(--line);padding:13px 0}.result:first-child{border-top:0;padding-top:0}.resulthead{display:flex;justify-content:space-between;gap:10px}.code{font:700 1.05rem ui-monospace,monospace;letter-spacing:.08em}.pill{font-size:.72rem;background:#e9f0e5;border-radius:99px;padding:3px 9px;white-space:nowrap}
+    .details{display:grid;grid-template-columns:1fr 1fr;gap:5px 14px;font-size:.88rem;margin-top:8px}.details span:nth-child(odd){color:var(--muted)}.empty{color:var(--muted);padding:12px 0}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.wide{grid-column:1/-1}.small{font-size:.8rem;color:var(--muted)}.hidden{display:none!important}
+    @media(max-width:700px){.layout{grid-template-columns:1fr}.top{display:block}.details{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header class="top"><div><div class="eyebrow">Rull-ID · WAN-IFRA</div><h1>IFRA Scanner</h1><p>Skanna rullar, avkoda 16 siffror och samla allt i en lista du kan klistra in i ett mejl.</p></div></header>
+  <div class="layout">
+    <section class="card">
+      <h2>Skanna kod</h2>
+      <div class="camwrap"><video id="video" class="camera" playsinline muted></video></div>
+      <div class="row"><button id="start">Starta kamera</button><button id="stop" class="secondary" disabled>Stoppa</button></div>
+      <div id="status" class="status">Kameran startar när du trycker på knappen.</div>
+      <label for="layoutType">Format för rullnummer</label>
+      <select id="layoutType"><option value="scandi">Skandinavisk: löpnummer</option><option value="central">Centraleuropeisk: tambour / set / position</option></select>
+      <label for="manual">Eller skriv / klistra in kod</label>
+      <div class="manual"><input id="manual" inputmode="numeric" placeholder="t.ex. 2355251207321272" maxlength="30"><button id="add">Lägg till</button></div>
+      <div class="small">Scannern använder webbläsarens inbyggda läsare när den stöder Interleaved 2 of 5, annars QuaggaJS som reserv. Om kameran ändå inte kan starta kan koden läsas med extern scanner och klistras in här.</div>
+    </section>
+    <section class="card">
+      <h2>Insamlade rullar <span id="count" class="pill">0</span></h2>
+      <div id="list"><div class="empty">Listan är tom. Skannade rullar visas här.</div></div>
+      <div class="actions"><button id="copy" class="secondary">Kopiera mejllista</button><button id="email">Skapa mejl</button><button id="clear" class="secondary danger">Rensa lista</button></div>
+      <div id="copyStatus" class="status"></div>
+    </section>
+    <section class="card wide">
+      <h2>Avkodning</h2>
+      <p>WAN-IFRA-koden har 16 siffror: 1–8 rullnummer, 9–12 bruttovikt i kg, 13 packnings-/klasskod, 14 papperskvalitet och 15–16 tillverkarkod.</p>
+      <p class="small">Kodtabellen för tillverkare är en community-lista, och äldre fabrikskoder kan vara inaktuella. Om koden saknas visas numret ändå. [1] <a href="https://github.com/alphp/WAN-IFRA-BarCode" target="_blank" rel="noreferrer">GitHub: WAN-IFRA-BarCode (specifikation och tillverkarlistor)</a> · [2] <a href="https://thecpi.org.uk/library/PDF/Public/health-safety/transport/07%20Paper%20Handling%20and%20Logistics%20best%20practice%20guide%202017.pdf" target="_blank" rel="noreferrer">CPI Paper Handling & Logistics (2017)</a>.</p>
+    </section>
+  </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js" defer></script>
+<script>
+const $=s=>document.querySelector(s), state={items:[],stream:null,raf:0,detector:null,last:"",quagga:false,nativeITF:false};
+if("BarcodeDetector" in window && BarcodeDetector.getSupportedFormats){BarcodeDetector.getSupportedFormats().then(formats=>state.nativeITF=formats.includes("itf")).catch(()=>{});}
+const quality={"1":"40 g/m² standard","2":"45 g/m² standard","3":"48,8 g/m² standard","4":"52 g/m² standard","5":"Annan standardkvalitet","6":"45 g/m² uppgraderad","7":"48,8 g/m² uppgraderad","8":"52 g/m² uppgraderad","9":"55 g/m² uppgraderad","0":"Annan kvalitet"};
+// Cache and load each list separately: the same two digit code can mean a different mill in each list.
+const millTables={1:{"1":"Norske Skog - Bruck","2":"UPM - Kaukas","3":"Kirkniemi","4":"UPM - Rauma","5":"UPM - Steyrermühl","6":"SCA Hallein","7":"UPM - Jämsänkoski","8":"UPM - Kajaani (stängt)","9":"Stora Enso Langerbrugge","18":"Papierfabrik Palm","31":"Äänekoski","46":"Norske Skog - Golbey","72":"Holmen - Hallsta","73":"Holmen - Braviken","74":"Stora Enso - Hylte","75":"Stora Enso - Grycksbo","76":"SCA","78":"Stora Enso - Kvarnsveden","86":"Sappi, Alfeld","87":"Sappi, Ehingen"},2:{},3:{}};
+async function loadMillTables(){for(const n of [1,2,3]){try{const url=`https://raw.githubusercontent.com/alphp/WAN-IFRA-BarCode/master/Manufacturers%20list%20${n}.md`;const r=await fetch(url);if(!r.ok)continue;const md=await r.text();const table={};for(const line of md.split(/\r?\n/)){const m=line.match(/^\|\s*(\d{1,2})\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|/);if(m)table[String(Number(m[1]))]=`${m[2]}${m[3]?`, ${m[3]}`:""}`}if(Object.keys(table).length)millTables[n]=table}catch{}}}
+function parse(raw){const code=raw.replace(/\D/g,"");if(code.length!==16)throw Error("IFRA-koden måste bestå av exakt 16 siffror.");const d=code.split("").map(Number), klass=d[12];let roll=`Maskin ${d[0]} · vecka ${code.slice(1,3)} · `;if($("#layoutType").value==="scandi"){roll+=`löpnummer ${code.slice(3,8)} (årsparitet: ${Number(code.slice(3,8))<50000?"jämnt":"udda"})`}else{roll+=`tambour ${code.slice(3,6)} · set ${d[6]} · position ${d[7]} (årsparitet: ${Number(code.slice(3,6))<500?"jämnt":"udda"})`};const band=(klass%2===1)?"1 rulle per omslag":"2 rullar per omslag";const listNo=klass<=2?1:klass<=4?2:klass<=6?3:0;const list=listNo?`tillverkarlista ${listNo}`:"klasskod utanför listorna";return {code,roll,weight:Number(code.slice(8,12)),pack:band,klass,list,quality:quality[code[13]],millCode:code.slice(14,16),mill:listNo?(millTables[listNo][String(parseInt(code.slice(14,16),10))]||"Okänd tillverkarkod"):"Okänd klasskod"}}
+function mailText(){return state.items.map((x,i)=>`${i+1}. ${x.code}\n   ${x.roll}\n   Vikt: ${x.weight} kg · ${x.pack}\n   Kvalitet: ${x.quality}\n   Tillverkare: ${x.mill} (kod ${x.millCode}; ${x.list})`).join("\n\n")}
+function render(){ $("#count").textContent=state.items.length;const list=$("#list");if(!state.items.length){list.innerHTML='<div class="empty">Listan är tom. Skannade rullar visas här.</div>';return}list.innerHTML=state.items.map((x,i)=>`<div class="result"><div class="resulthead"><span class="code">${x.code}</span><button class="secondary remove" data-i="${i}" aria-label="Ta bort">Ta bort</button></div><div class="details"><span>Rullnummer</span><b>${x.roll}</b><span>Vikt</span><b>${x.weight} kg · ${x.pack}</b><span>Papper</span><b>${x.quality}</b><span>Tillverkare</span><b>${x.mill} (${x.millCode})</b></div></div>`).join("");list.querySelectorAll(".remove").forEach(b=>b.onclick=()=>{state.items.splice(+b.dataset.i,1);render()})}
+function add(raw){try{const item=parse(raw);if(state.items.some(x=>x.code===item.code)){setStatus("Koden finns redan i listan.");return}state.items.unshift(item);render();$("#manual").value="";setStatus("Tillagd: "+item.code)}catch(e){setStatus(e.message,true)}}
+function setStatus(s,error=false){const el=$("#status");el.textContent=s;el.classList.toggle("error",error)}
+$("#add").onclick=()=>add($("#manual").value);$("#manual").addEventListener("keydown",e=>{if(e.key==="Enter")add(e.currentTarget.value)});
+$("#clear").onclick=()=>{state.items=[];render();$("#copyStatus").textContent=""};
+$("#copy").onclick=async()=>{if(!state.items.length){$("#copyStatus").textContent="Listan är tom.";return}try{await navigator.clipboard.writeText(mailText());$("#copyStatus").textContent="Kopierad. Klistra in i mejlet."}catch{$("#copyStatus").textContent="Markera och kopiera listan via mejlknappen."}};
+$("#email").onclick=()=>{if(!state.items.length){$("#copyStatus").textContent="Listan är tom.";return}location.href="mailto:?subject="+encodeURIComponent("IFRA-rullar")+"&body="+encodeURIComponent(mailText())};
+$("#start").onclick=async()=>{try{if(!window.isSecureContext)throw Error("Osäker anslutning: öppna appen via HTTPS.");if(!navigator.mediaDevices?.getUserMedia)throw Error("Webbläsaren exponerar inte kamera-API:t. Öppna den publicerade HTTPS-adressen i Safari och lägg till appen igen.");$("#start").disabled=true;$("#stop").disabled=false;if(state.nativeITF){state.detector=new BarcodeDetector({formats:["itf"]});state.stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:"environment"}},audio:false});$("#video").srcObject=state.stream;await $("#video").play();setStatus("Rikta kameran mot streckkoden.");scan();return}if(!window.Quagga)throw Error("QuaggaJS kunde inte laddas. Kontrollera internetanslutningen och öppna appen online en gång.");$("#video").classList.add("hidden");const host=document.querySelector(".camwrap");host.id="scannerViewport";Quagga.init({inputStream:{name:"Live",type:"LiveStream",target:host,constraints:{facingMode:"environment",width:{ideal:1280},height:{ideal:720}}},locator:{patchSize:"medium",halfSample:true},decoder:{readers:["i2of5_reader"]},locate:true},err=>{if(err){$("#start").disabled=false;$("#stop").disabled=true;setStatus("Kameran kunde inte startas: "+err.message,true);return}state.quagga=true;Quagga.start();setStatus("Rikta kameran mot streckkoden.")});Quagga.offDetected(onQuaggaDetected);Quagga.onDetected(onQuaggaDetected)}catch(e){$("#start").disabled=false;$("#stop").disabled=true;let message=e.message||e.name||"okänt fel";if(e.name==="NotAllowedError"||e.name==="PermissionDeniedError")message="Kamerabehörighet nekad. Tillåt kamera för appen i iPhone-inställningarna och försök igen.";else if(e.name==="NotFoundError"||e.name==="DevicesNotFoundError")message="Ingen kamera hittades på enheten.";else if(e.name==="NotReadableError"||e.name==="TrackStartError")message="Kameran används redan av en annan app. Stäng den appen och försök igen.";else if(e.name==="OverconstrainedError")message="Kameran stöder inte begärda inställningar. Försök med en annan kamera.";setStatus("Kamerafel: "+message,true)}};
+function onQuaggaDetected(result){const value=(result?.codeResult?.code||"").replace(/\D/g,"");if(value.length===16&&value!==state.last){state.last=value;add(value);setTimeout(()=>state.last="",1800)}}
+function scan(){if(!state.stream)return;state.detector.detect($("#video")).then(codes=>{for(const c of codes){const value=(c.rawValue||"").replace(/\D/g,"");if(value.length===16&&value!==state.last){state.last=value;add(value);setTimeout(()=>state.last="",1800)}}}).catch(()=>{});state.raf=requestAnimationFrame(scan)}
+$("#stop").onclick=()=>{cancelAnimationFrame(state.raf);if(state.quagga){Quagga.stop();state.quagga=false;Quagga.offDetected(onQuaggaDetected);const host=document.querySelector("#scannerViewport");if(host)host.innerHTML='<video id="video" class="camera" playsinline muted></video>';$("#video").classList.remove("hidden");document.querySelector(".camwrap").removeAttribute("id")}if(state.stream)state.stream.getTracks().forEach(t=>t.stop());state.stream=null;if($("#video"))$("#video").srcObject=null;$("#start").disabled=false;$("#stop").disabled=true;setStatus("Kameran är stoppad.")};
+loadMillTables();
+if("serviceWorker" in navigator && (location.protocol==="https:" || location.hostname==="localhost" || location.hostname==="127.0.0.1")){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(err=>console.warn("Service worker registration failed",err)));
+}
+</script>
+</body>
+</html>
