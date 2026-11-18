@@ -1,0 +1,1248 @@
+{
+  "1": {
+    "1": {
+      "manufacturerCode": 1,
+      "manufacturer": "Norske Skog - Bruck",
+      "location": "Austria"
+    },
+    "2": {
+      "manufacturerCode": 2,
+      "manufacturer": "UPM - Kaukas",
+      "location": "Finland"
+    },
+    "3": {
+      "manufacturerCode": 3,
+      "manufacturer": "Kirkniemi",
+      "location": "Finland"
+    },
+    "4": {
+      "manufacturerCode": 4,
+      "manufacturer": "UPM - Rauma",
+      "location": "Finland"
+    },
+    "5": {
+      "manufacturerCode": 5,
+      "manufacturer": "UPM - Steyrermühl",
+      "location": "Austria"
+    },
+    "6": {
+      "manufacturerCode": 6,
+      "manufacturer": "SCA Hallein",
+      "location": "Austria"
+    },
+    "7": {
+      "manufacturerCode": 7,
+      "manufacturer": "UPM - Jämsänkoski",
+      "location": "Finland"
+    },
+    "8": {
+      "manufacturerCode": 8,
+      "manufacturer": "UPM - Kajaani, closed",
+      "location": "Finland"
+    },
+    "9": {
+      "manufacturerCode": 9,
+      "manufacturer": "Stora Enso Langerbrugge",
+      "location": "Belgium"
+    },
+    "10": {
+      "manufacturerCode": 10,
+      "manufacturer": "Nordland (UPM), Dörpen",
+      "location": "Germany"
+    },
+    "11": {
+      "manufacturerCode": 11,
+      "manufacturer": "SCA Laakirchen",
+      "location": "Austria"
+    },
+    "12": {
+      "manufacturerCode": 12,
+      "manufacturer": "UPM - Voikkaa, closed",
+      "location": "Finland"
+    },
+    "13": {
+      "manufacturerCode": 13,
+      "manufacturer": "Kyro",
+      "location": "Finland"
+    },
+    "14": {
+      "manufacturerCode": 14,
+      "manufacturer": "Compagnie Papetière Essone",
+      "location": "France"
+    },
+    "15": {
+      "manufacturerCode": 15,
+      "manufacturer": "UPM - Augsburg",
+      "location": "Germany"
+    },
+    "16": {
+      "manufacturerCode": 16,
+      "manufacturer": "Myllykoski, closed",
+      "location": "Finland"
+    },
+    "17": {
+      "manufacturerCode": 17,
+      "manufacturer": "UPM - Schongau",
+      "location": "Germany"
+    },
+    "18": {
+      "manufacturerCode": 18,
+      "manufacturer": "Papierfabrik Palm",
+      "location": "Germany"
+    },
+    "19": {
+      "manufacturerCode": 19,
+      "manufacturer": "Holtzmann",
+      "location": "Germany"
+    },
+    "20": {
+      "manufacturerCode": 20,
+      "manufacturer": "UPM - Schwedt",
+      "location": "Germany"
+    },
+    "21": {
+      "manufacturerCode": 21,
+      "manufacturer": "Lang",
+      "location": "Germany"
+    },
+    "22": {
+      "manufacturerCode": 22,
+      "manufacturer": "Utzenstorf",
+      "location": "Switzerland"
+    },
+    "23": {
+      "manufacturerCode": 23,
+      "manufacturer": "Perlen",
+      "location": "Switzerland"
+    },
+    "24": {
+      "manufacturerCode": 24,
+      "manufacturer": "Zwingen",
+      "location": "Switzerland"
+    },
+    "25": {
+      "manufacturerCode": 25,
+      "manufacturer": "Norske Skog Walsum, Duisburg",
+      "location": "Germany"
+    },
+    "26": {
+      "manufacturerCode": 26,
+      "manufacturer": "Pap Espanola",
+      "location": "Spain"
+    },
+    "27": {
+      "manufacturerCode": 27,
+      "manufacturer": "Sniace S.A.",
+      "location": "Spain"
+    },
+    "28": {
+      "manufacturerCode": 28,
+      "manufacturer": "Holmen - Madrid",
+      "location": "Spain"
+    },
+    "29": {
+      "manufacturerCode": 29,
+      "manufacturer": "ROTO,a.s.",
+      "location": "Czech Rep."
+    },
+    "30": {
+      "manufacturerCode": 30,
+      "manufacturer": "Matussiere et Forest, Domene",
+      "location": "France"
+    },
+    "31": {
+      "manufacturerCode": 31,
+      "manufacturer": "Äänekoski",
+      "location": "Finland"
+    },
+    "32": {
+      "manufacturerCode": 32,
+      "manufacturer": "Stora Enso - Varkaus",
+      "location": "Finland"
+    },
+    "33": {
+      "manufacturerCode": 33,
+      "manufacturer": "Vertaris SAS, Voreppe",
+      "location": "France"
+    },
+    "34": {
+      "manufacturerCode": 34,
+      "manufacturer": "Stora Enso - Anjala",
+      "location": "Finland"
+    },
+    "35": {
+      "manufacturerCode": 35,
+      "manufacturer": "UPM - Kaipola PM 7",
+      "location": "Finland"
+    },
+    "36": {
+      "manufacturerCode": 36,
+      "manufacturer": "UPM - Kaipola",
+      "location": "Finland"
+    },
+    "37": {
+      "manufacturerCode": 37,
+      "manufacturer": "Stora Enso - Veitsiluoto",
+      "location": "Finland"
+    },
+    "38": {
+      "manufacturerCode": 38,
+      "manufacturer": "Stora Enso - Summa, closed",
+      "location": "Finland"
+    },
+    "39": {
+      "manufacturerCode": 39,
+      "manufacturer": "ArjoWiggins Le Bourray S.A.S.",
+      "location": "France"
+    },
+    "40": {
+      "manufacturerCode": 40,
+      "manufacturer": "Stora Enso-Kotka",
+      "location": "Finland"
+    },
+    "41": {
+      "manufacturerCode": 41,
+      "manufacturer": "Béghin",
+      "location": "France"
+    },
+    "42": {
+      "manufacturerCode": 42,
+      "manufacturer": "UPM - Chapelle Darblay",
+      "location": "France"
+    },
+    "43": {
+      "manufacturerCode": 43,
+      "manufacturer": "PMF Lédar",
+      "location": "France"
+    },
+    "44": {
+      "manufacturerCode": 44,
+      "manufacturer": "Papeteries de Turckheim",
+      "location": "France"
+    },
+    "45": {
+      "manufacturerCode": 45,
+      "manufacturer": "Stracel (UPM)",
+      "location": "France"
+    },
+    "46": {
+      "manufacturerCode": 46,
+      "manufacturer": "Norske Skog - Golbey",
+      "location": "France"
+    },
+    "47": {
+      "manufacturerCode": 47,
+      "manufacturer": "Bowaters",
+      "location": "United Kingdom"
+    },
+    "48": {
+      "manufacturerCode": 48,
+      "manufacturer": "Bridgewater",
+      "location": "United Kingdom"
+    },
+    "49": {
+      "manufacturerCode": 49,
+      "manufacturer": "Aylesford Newsprint (SCA)",
+      "location": "United Kingdom"
+    },
+    "50": {
+      "manufacturerCode": 50,
+      "manufacturer": "Shotton (UPM)",
+      "location": "United Kingdom"
+    },
+    "51": {
+      "manufacturerCode": 51,
+      "manufacturer": "UPM - Kymi, Kuusankoski",
+      "location": "Finland"
+    },
+    "52": {
+      "manufacturerCode": 52,
+      "manufacturer": "Solikamskbumprom",
+      "location": "Russia"
+    },
+    "53": {
+      "manufacturerCode": 53,
+      "manufacturer": "Thessalian Pulp & Paper",
+      "location": "Greece"
+    },
+    "54": {
+      "manufacturerCode": 54,
+      "manufacturer": "Burgo Group – Sora",
+      "location": "Italy"
+    },
+    "55": {
+      "manufacturerCode": 55,
+      "manufacturer": "Syktyvkar",
+      "location": "Russia"
+    },
+    "56": {
+      "manufacturerCode": 56,
+      "manufacturer": "Nuova Cartiera di Arbatax",
+      "location": "Italy"
+    },
+    "57": {
+      "manufacturerCode": 57,
+      "manufacturer": "Internation. Paper-Kwidzyn",
+      "location": "Poland"
+    },
+    "58": {
+      "manufacturerCode": 58,
+      "manufacturer": "Kondopoga PPM JSC",
+      "location": "Russia"
+    },
+    "59": {
+      "manufacturerCode": 59,
+      "manufacturer": "JSC Volga",
+      "location": "Russia"
+    },
+    "60": {
+      "manufacturerCode": 60,
+      "manufacturer": "Szczecin - Skolwin S.A.",
+      "location": "Poland"
+    },
+    "61": {
+      "manufacturerCode": 61,
+      "manufacturer": "Norske Skog- Follum",
+      "location": "Norway"
+    },
+    "62": {
+      "manufacturerCode": 62,
+      "manufacturer": "Holmen-Hellefos",
+      "location": "Norway"
+    },
+    "63": {
+      "manufacturerCode": 63,
+      "manufacturer": "Norske Skog - Skogn",
+      "location": "Norway"
+    },
+    "64": {
+      "manufacturerCode": 64,
+      "manufacturer": "Norske Skog - Saugbrugs",
+      "location": "Norway"
+    },
+    "65": {
+      "manufacturerCode": 65,
+      "manufacturer": "Norske Skog - Union",
+      "location": "Norway"
+    },
+    "66": {
+      "manufacturerCode": 66,
+      "manufacturer": "Stora Enso - Sachsen",
+      "location": "Germany"
+    },
+    "67": {
+      "manufacturerCode": 67,
+      "manufacturer": "Kübler&Niethammer-Kriebstein",
+      "location": "Germany"
+    },
+    "68": {
+      "manufacturerCode": 68,
+      "manufacturer": "SCA Stockstadt",
+      "location": "Germany"
+    },
+    "69": {
+      "manufacturerCode": 69,
+      "manufacturer": "Norske Skog - Parenco",
+      "location": "Netherlands"
+    },
+    "70": {
+      "manufacturerCode": 70,
+      "manufacturer": "Papierfabrik Salach GmbH",
+      "location": "Germany"
+    },
+    "71": {
+      "manufacturerCode": 71,
+      "manufacturer": "Papel Prensa - San Pedro Mill",
+      "location": "Argentina"
+    },
+    "72": {
+      "manufacturerCode": 72,
+      "manufacturer": "Holmen - Hallsta",
+      "location": "Sweden"
+    },
+    "73": {
+      "manufacturerCode": 73,
+      "manufacturer": "Holmen - Braviken",
+      "location": "Sweden"
+    },
+    "74": {
+      "manufacturerCode": 74,
+      "manufacturer": "Stora Enso - Hylte",
+      "location": "Sweden"
+    },
+    "75": {
+      "manufacturerCode": 75,
+      "manufacturer": "Stora Enso - Grycksbo",
+      "location": "Sweden"
+    },
+    "76": {
+      "manufacturerCode": 76,
+      "manufacturer": "SCA",
+      "location": "Sweden"
+    },
+    "77": {
+      "manufacturerCode": 77,
+      "manufacturer": "Matussiere et Forest - Lancey, Brignoud",
+      "location": "France"
+    },
+    "78": {
+      "manufacturerCode": 78,
+      "manufacturer": "Stora Enso - Kvarnsveden",
+      "location": "Sweden"
+    },
+    "79": {
+      "manufacturerCode": 79,
+      "manufacturer": "Kruger, Coner Brook",
+      "location": "Canada"
+    },
+    "80": {
+      "manufacturerCode": 80,
+      "manufacturer": "Daishowa, Quebec City",
+      "location": "Canada"
+    },
+    "81": {
+      "manufacturerCode": 81,
+      "manufacturer": "Abitibi-Cons., Belgo",
+      "location": "Canada"
+    },
+    "82": {
+      "manufacturerCode": 82,
+      "manufacturer": "Abitibi-Cons., Laurentide",
+      "location": "Canada"
+    },
+    "83": {
+      "manufacturerCode": 83,
+      "manufacturer": "Abitibi-Cons., Port Alfred",
+      "location": "Canada"
+    },
+    "84": {
+      "manufacturerCode": 84,
+      "manufacturer": "Abitibi-Cons., Wayagamack",
+      "location": "Canada"
+    },
+    "85": {
+      "manufacturerCode": 85,
+      "manufacturer": "Trust International Paper Corp.",
+      "location": "Philippines"
+    },
+    "86": {
+      "manufacturerCode": 86,
+      "manufacturer": "Sappi, Alfeld",
+      "location": "Germany"
+    },
+    "87": {
+      "manufacturerCode": 87,
+      "manufacturer": "Sappi, Ehingen",
+      "location": "Germany"
+    },
+    "88": {
+      "manufacturerCode": 88,
+      "manufacturer": "Norske Skog - Steti",
+      "location": "Czech Rep."
+    },
+    "89": {
+      "manufacturerCode": 89,
+      "manufacturer": "Mochenwangen Papier GmbH",
+      "location": "Germany"
+    },
+    "90": {
+      "manufacturerCode": 90,
+      "manufacturer": "Schönfelder Papierfabrik GmbH",
+      "location": "Germany"
+    },
+    "91": {
+      "manufacturerCode": 91,
+      "manufacturer": "Rhein Papier GmbH",
+      "location": "Germany"
+    },
+    "92": {
+      "manufacturerCode": 92,
+      "manufacturer": "Papierfabrik Hermes",
+      "location": "Germany"
+    },
+    "93": {
+      "manufacturerCode": 93,
+      "manufacturer": "PMF Raon l'étape",
+      "location": "France"
+    },
+    "94": {
+      "manufacturerCode": 94,
+      "manufacturer": "PMF Rambervillers",
+      "location": "France"
+    },
+    "95": {
+      "manufacturerCode": 95,
+      "manufacturer": "LEIPA Georg Leinfelder GmbH, Schwedt",
+      "location": "Germany"
+    },
+    "96": {
+      "manufacturerCode": 96,
+      "manufacturer": "VIPAP VIDEM KRŠKO",
+      "location": "Slovenia"
+    },
+    "97": {
+      "manufacturerCode": 97,
+      "manufacturer": "Eurofin S. p. A.",
+      "location": "Italy"
+    },
+    "98": {
+      "manufacturerCode": 98,
+      "manufacturer": "Cartiera Verde Romanello S.p.A., Basaldella di Campoformido",
+      "location": "Italy"
+    },
+    "99": {
+      "manufacturerCode": 99,
+      "manufacturer": "Rewound paper (Hylte converting AB)",
+      "location": "Sweden"
+    }
+  },
+  "2": {
+    "1": {
+      "manufacturerCode": 1,
+      "manufacturer": "Abitibi-Cons./Alma",
+      "location": "Québec (Can.)"
+    },
+    "2": {
+      "manufacturerCode": 2,
+      "manufacturer": "Abitibi-Cons./Beaupré",
+      "location": "Québec (Can.)"
+    },
+    "3": {
+      "manufacturerCode": 3,
+      "manufacturer": "Abitibi-Cons./Fort William",
+      "location": "Ontario (Can.)"
+    },
+    "4": {
+      "manufacturerCode": 4,
+      "manufacturer": "Abitibi-Cons./Grand Falls",
+      "location": "Newfoundland (Can.)"
+    },
+    "5": {
+      "manufacturerCode": 5,
+      "manufacturer": "Abitibi-Cons./Iroquois Falls",
+      "location": "Ontario (Can.)"
+    },
+    "6": {
+      "manufacturerCode": 6,
+      "manufacturer": "Abitibi-Cons./Kenogami",
+      "location": "Quebec (Can.)"
+    },
+    "7": {
+      "manufacturerCode": 7,
+      "manufacturer": "Abitibi-Cons./Pine Falls",
+      "location": "Manitoba (Can.)"
+    },
+    "8": {
+      "manufacturerCode": 8,
+      "manufacturer": "Abitibi-Cons./Stephenville",
+      "location": "Newfoundland (Can.)"
+    },
+    "9": {
+      "manufacturerCode": 9,
+      "manufacturer": "Abitibi-Cons./Thunder Bay",
+      "location": "Ontario (Can.)"
+    },
+    "10": {
+      "manufacturerCode": 10,
+      "manufacturer": "Alberta Newsprint Co. / Whitecourt",
+      "location": "Alberta (Can.)"
+    },
+    "11": {
+      "manufacturerCode": 11,
+      "manufacturer": "Atlantic Newsprint Co. / Whitby",
+      "location": "Ontario (Can.)"
+    },
+    "12": {
+      "manufacturerCode": 12,
+      "manufacturer": "Boise Cascade Canada Ltd. / Kenora",
+      "location": "Ontario (Can.)"
+    },
+    "13": {
+      "manufacturerCode": 13,
+      "manufacturer": "Bowater Mersey Paper Co. / Liverpool",
+      "location": "Nova Scotia (Can.)"
+    },
+    "14": {
+      "manufacturerCode": 14,
+      "manufacturer": "Can. Pacific Forest Products Ltd. / Dalhousie",
+      "location": "N.B. (Can.)"
+    },
+    "15": {
+      "manufacturerCode": 15,
+      "manufacturer": "Can. Pacific Forest Products Ltd. / Gatineau",
+      "location": "Quebec (Can.)"
+    },
+    "16": {
+      "manufacturerCode": 16,
+      "manufacturer": "Can. Pacific Forest Products Ltd. / Thunder Bay",
+      "location": "Ontario (Can.)"
+    },
+    "17": {
+      "manufacturerCode": 17,
+      "manufacturer": "Can. Pacific Forest Products Ltd. / Trois Rivières",
+      "location": "Quebec (Can.)"
+    },
+    "18": {
+      "manufacturerCode": 18,
+      "manufacturer": "Domtar Inc. / Dolbeau",
+      "location": "Quebec (Can.)"
+    },
+    "19": {
+      "manufacturerCode": 19,
+      "manufacturer": "Domtar Inc. / Donnacona",
+      "location": "Quebec (Can.)"
+    },
+    "20": {
+      "manufacturerCode": 20,
+      "manufacturer": "Domtar Inc. / Red Rock",
+      "location": "Ontario (Can.)"
+    },
+    "21": {
+      "manufacturerCode": 21,
+      "manufacturer": "Donohue Inc. / Clermont",
+      "location": "Quebec (Can.)"
+    },
+    "22": {
+      "manufacturerCode": 22,
+      "manufacturer": "Donohue Charlevoix / Clermont",
+      "location": "Quebec (Can.)"
+    },
+    "23": {
+      "manufacturerCode": 23,
+      "manufacturer": "Donohue Malbaie Inc. / Clermont",
+      "location": "Quebec (Can.)"
+    },
+    "24": {
+      "manufacturerCode": 24,
+      "manufacturer": "Donohue Normick Inc. / Amos",
+      "location": "Quebec (Can.)"
+    },
+    "25": {
+      "manufacturerCode": 25,
+      "manufacturer": "Finlay Forest Industries / Mackenzie",
+      "location": "B.C. (Can.)"
+    },
+    "26": {
+      "manufacturerCode": 26,
+      "manufacturer": "Fletcher Challenge Canada / Crofton",
+      "location": "B.C. (Can.)"
+    },
+    "27": {
+      "manufacturerCode": 27,
+      "manufacturer": "Fletcher Challenge Canada / Elk Falls",
+      "location": "B.C. (Can.)"
+    },
+    "28": {
+      "manufacturerCode": 28,
+      "manufacturer": "Abitibi-Cons. / Chandler",
+      "location": "Quebec (Can.)"
+    },
+    "29": {
+      "manufacturerCode": 29,
+      "manufacturer": "Gold River Newsprint / Gold River",
+      "location": "B.C. (Can.)"
+    },
+    "30": {
+      "manufacturerCode": 30,
+      "manufacturer": "Howe Sound Pulp & Paper / Port Mellon",
+      "location": "B.C. (Can.)"
+    },
+    "31": {
+      "manufacturerCode": 31,
+      "manufacturer": "James MacLaren Industries / Masson",
+      "location": "Quebec (Can.)"
+    },
+    "32": {
+      "manufacturerCode": 32,
+      "manufacturer": "Kruger Inc. / Bromptonville",
+      "location": "Quebec (Can.)"
+    },
+    "33": {
+      "manufacturerCode": 33,
+      "manufacturer": "Kruger Inc. / Trois-Rivières",
+      "location": "Quebec (Can.)"
+    },
+    "34": {
+      "manufacturerCode": 34,
+      "manufacturer": "Mac Millan Bloedel Limited / Port Alberni",
+      "location": "B.C. (Can.)"
+    },
+    "35": {
+      "manufacturerCode": 35,
+      "manufacturer": "Mac Millan Bloedel Limited / Powell River",
+      "location": "B.C. (Can.)"
+    },
+    "36": {
+      "manufacturerCode": 36,
+      "manufacturer": "Quebec & Ontario Pap. Co. Ltd. / Baie Comeau",
+      "location": "Quebec (Can.)"
+    },
+    "37": {
+      "manufacturerCode": 37,
+      "manufacturer": "Quebec & Ontario Paper Co. Ltd. / Thorold",
+      "location": "Ontario (Can.)"
+    },
+    "38": {
+      "manufacturerCode": 38,
+      "manufacturer": "Rothesay Paper Ltd. / Saint John",
+      "location": "N.B. (Can.)"
+    },
+    "39": {
+      "manufacturerCode": 39,
+      "manufacturer": "F.F. Soucy Inc / Rivière-du-Loup",
+      "location": "Quebec (Can.)"
+    },
+    "40": {
+      "manufacturerCode": 40,
+      "manufacturer": "Spruce Falls Power & Pap. Co. Ltd. / Kap.",
+      "location": "Ontario (Can.)"
+    },
+    "41": {
+      "manufacturerCode": 41,
+      "manufacturer": "Stora Forest Industries / Point Tupper, N.S.",
+      "location": "Nova Scotia (Can.)"
+    },
+    "42": {
+      "manufacturerCode": 42,
+      "manufacturer": "Avenor Maritimes Inc. / Dalhousie, New Br.",
+      "location": "N.B. (Can.)"
+    },
+    "43": {
+      "manufacturerCode": 43,
+      "manufacturer": "Abitibi-Cons./Fort Frances",
+      "location": "Ontario (Can.)"
+    },
+    "44": {
+      "manufacturerCode": 44,
+      "manufacturer": "Papierfabrik Hainsberg GmbH, Freital",
+      "location": "Germany"
+    },
+    "45": {
+      "manufacturerCode": 45,
+      "manufacturer": "Shandong Chenming Paper Holdings Ltd, Shouguang",
+      "location": "China"
+    },
+    "46": {
+      "manufacturerCode": 46,
+      "manufacturer": "Fährbrücke Papier GmbH, Langenweißbach",
+      "location": "Germany"
+    },
+    "47": {
+      "manufacturerCode": 47,
+      "manufacturer": "Papierfabrik am Neckar GmbH & Co. KG, Gemmrigheim",
+      "location": "Germany"
+    },
+    "48": {
+      "manufacturerCode": 48,
+      "manufacturer": "Fujian Nanping Paper Co. Ltd., Nanping",
+      "location": "China"
+    },
+    "49": {
+      "manufacturerCode": 49,
+      "manufacturer": "Plattling Papier GmbH, Plattling",
+      "location": "Germany"
+    },
+    "50": {
+      "manufacturerCode": 50,
+      "manufacturer": "P.T. Aspex Paper Mill, Bogor, Jawa Barat",
+      "location": "Indonesia"
+    },
+    "51": {
+      "manufacturerCode": 51,
+      "manufacturer": "Matussiete et Forest - Lancey, Lancey",
+      "location": "France"
+    },
+    "52": {
+      "manufacturerCode": 52,
+      "manufacturer": "CONDAT - Lardin, Le Lardin Saint Lazare",
+      "location": "France"
+    },
+    "53": {
+      "manufacturerCode": 53,
+      "manufacturer": "SCHOELLERSHAMMER, Düren",
+      "location": "Germany"
+    },
+    "54": {
+      "manufacturerCode": 54,
+      "manufacturer": "Cartiere Burgo - Duino, Duino",
+      "location": "Italy"
+    },
+    "55": {
+      "manufacturerCode": 55,
+      "manufacturer": "Cartiere Burgo - Verzuolo, Verzuolo",
+      "location": "Italy"
+    },
+    "56": {
+      "manufacturerCode": 56,
+      "manufacturer": "Cartiere Marchi - Villorba, Villorba",
+      "location": "Italy"
+    },
+    "57": {
+      "manufacturerCode": 57,
+      "manufacturer": "Cartiere Burgo - Ardennes, Virton",
+      "location": "Belgium"
+    },
+    "58": {
+      "manufacturerCode": 58,
+      "manufacturer": "Cartiera Verde Romanello S.p.A., Varazze",
+      "location": "Italy"
+    },
+    "59": {
+      "manufacturerCode": 59,
+      "manufacturer": "Cartiere Paolo Pigna S.p.A., Alzano Lomardo",
+      "location": "Italy"
+    },
+    "60": {
+      "manufacturerCode": 60,
+      "manufacturer": "Alabama River Newsprint Co. / Clalborne",
+      "location": "Al. (USA)"
+    },
+    "61": {
+      "manufacturerCode": 61,
+      "manufacturer": "Augusta Newsprint Co. / Augusta",
+      "location": "Geor. (USA)"
+    },
+    "62": {
+      "manufacturerCode": 62,
+      "manufacturer": "Bear Island Paper Co. / Ashland",
+      "location": "Virg. (USA)"
+    },
+    "63": {
+      "manufacturerCode": 63,
+      "manufacturer": "Boise Cascade Corp. / DeRidder",
+      "location": "Louis. (USA)"
+    },
+    "64": {
+      "manufacturerCode": 64,
+      "manufacturer": "Boise Cascade Corp. / Stellacoom",
+      "location": "Wash. (USA)"
+    },
+    "65": {
+      "manufacturerCode": 65,
+      "manufacturer": "Bowater Inc. / Calhoun",
+      "location": "Tenn. (USA)"
+    },
+    "66": {
+      "manufacturerCode": 66,
+      "manufacturer": "Bowater Inc. / Catawba",
+      "location": "S. Car. (USA)"
+    },
+    "67": {
+      "manufacturerCode": 67,
+      "manufacturer": "Champion Int. Corp. / Lufkin",
+      "location": "Texas (USA)"
+    },
+    "68": {
+      "manufacturerCode": 68,
+      "manufacturer": "Champion Int. Corp. / Houston",
+      "location": "Texas (USA)"
+    },
+    "69": {
+      "manufacturerCode": 69,
+      "manufacturer": "Daishowa America Co. Ltd. / Port Angeles",
+      "location": "Wash. (USA)"
+    },
+    "70": {
+      "manufacturerCode": 70,
+      "manufacturer": "FSC Paper Corp. / Alsip",
+      "location": "Illinois (USA)"
+    },
+    "71": {
+      "manufacturerCode": 71,
+      "manufacturer": "Garden State Paper Co. Inc. / Garfield",
+      "location": "New J. (USA)"
+    },
+    "72": {
+      "manufacturerCode": 72,
+      "manufacturer": "Golden State Newsprint Co. Inc. / Pomona",
+      "location": "Cal. (USA)"
+    },
+    "73": {
+      "manufacturerCode": 73,
+      "manufacturer": "Katahdin Paper Company LLC / East Millinocket",
+      "location": "Maine (USA)"
+    },
+    "74": {
+      "manufacturerCode": 74,
+      "manufacturer": "Inland Empire Paper Co. / Millwood",
+      "location": "Wash. (USA)"
+    },
+    "75": {
+      "manufacturerCode": 75,
+      "manufacturer": "James River Corp. / Wauna",
+      "location": "Oregon (USA)"
+    },
+    "76": {
+      "manufacturerCode": 76,
+      "manufacturer": "Bowater Coosa Pines",
+      "location": "Al. (USA)"
+    },
+    "77": {
+      "manufacturerCode": 77,
+      "manufacturer": "Manistique Papers Inc. / Manistique",
+      "location": "Mich. (USA)"
+    },
+    "78": {
+      "manufacturerCode": 78,
+      "manufacturer": "Bowater Newsprint South / Grenada",
+      "location": "Missi. (USA)"
+    },
+    "79": {
+      "manufacturerCode": 79,
+      "manufacturer": "North Pacific Paper Co. / Longview",
+      "location": "Wash. (USA)"
+    },
+    "80": {
+      "manufacturerCode": 80,
+      "manufacturer": "Ponderay Newsprint Co. / Usk",
+      "location": "Wash. (USA)"
+    },
+    "81": {
+      "manufacturerCode": 81,
+      "manufacturer": "Smurfit Newsprint Corp. / Newberg",
+      "location": "Oregon (USA)"
+    },
+    "82": {
+      "manufacturerCode": 82,
+      "manufacturer": "Smurfit Newsprint Corp. / Oregon city",
+      "location": "Oregon (USA)"
+    },
+    "83": {
+      "manufacturerCode": 83,
+      "manufacturer": "Southeast Paper Mfg., Co / Dublin",
+      "location": "Geor. (USA)"
+    },
+    "84": {
+      "manufacturerCode": 84,
+      "manufacturer": "Stone Container Corp. / Snowflake",
+      "location": "Al. (USA)"
+    },
+    "85": {
+      "manufacturerCode": 85,
+      "manufacturer": "Cartiere Marchi - Toscolano, Toscolano",
+      "location": "Italy"
+    },
+    "86": {
+      "manufacturerCode": 86,
+      "manufacturer": "Cartiere Burgo - Avezzano, Avezzano",
+      "location": "Italy"
+    },
+    "87": {
+      "manufacturerCode": 87,
+      "manufacturer": "Mosaico – Burgo Group – Treviso",
+      "location": "Italy"
+    },
+    "88": {
+      "manufacturerCode": 88,
+      "manufacturer": "Cartiere Marchi - Sarego, Sarego",
+      "location": "Italy"
+    },
+    "89": {
+      "manufacturerCode": 89,
+      "manufacturer": "Stora Enso - Kabel, Hagen",
+      "location": "Germany"
+    },
+    "90": {
+      "manufacturerCode": 90,
+      "manufacturer": "Industrias Forestales S.A. / Santiago",
+      "location": "Chile"
+    },
+    "91": {
+      "manufacturerCode": 91,
+      "manufacturer": "Bowater Halla",
+      "location": "South Korea"
+    },
+    "92": {
+      "manufacturerCode": 92,
+      "manufacturer": "Norske Skog - Bio Bio",
+      "location": "Chile"
+    },
+    "93": {
+      "manufacturerCode": 93,
+      "manufacturer": "Nippon Paper Industries, Iwanuma",
+      "location": "Japan"
+    },
+    "94": {
+      "manufacturerCode": 94,
+      "manufacturer": "Nippon Paper Industries, Shiraoi",
+      "location": "Japan"
+    },
+    "95": {
+      "manufacturerCode": 95,
+      "manufacturer": "Norske Skog - Pisa",
+      "location": "Brazil"
+    },
+    "96": {
+      "manufacturerCode": 96,
+      "manufacturer": "Nippon Paper Industries, Ishinomaki",
+      "location": "Japan"
+    },
+    "97": {
+      "manufacturerCode": 97,
+      "manufacturer": "Stora Enso Huatai (Shandong) Paper Co. Ltd., Dongying",
+      "location": "China"
+    },
+    "98": {
+      "manufacturerCode": 98,
+      "manufacturer": "Steinbeiss Temming Papier GmbH & Co, Glückstadt",
+      "location": "Germany"
+    },
+    "99": {
+      "manufacturerCode": 99,
+      "manufacturer": "Shandong Huatai Paper Industry Shareholding Company Ltd, Dongying",
+      "location": "China"
+    }
+  },
+  "3": {
+    "1": {
+      "manufacturerCode": 1,
+      "manufacturer": "Nippon Paper Industries, Iwakuni",
+      "location": "Japan"
+    },
+    "2": {
+      "manufacturerCode": 2,
+      "manufacturer": "Artic Paper Kostrzyn S.A., Kostrzyn",
+      "location": "Poland"
+    },
+    "3": {
+      "manufacturerCode": 3,
+      "manufacturer": "Marusumi paper OOE mill, Shikokuchuo",
+      "location": "Japan"
+    },
+    "4": {
+      "manufacturerCode": 4,
+      "manufacturer": "Stora Enso - Imatra",
+      "location": "Finland"
+    },
+    "5": {
+      "manufacturerCode": 5,
+      "manufacturer": "Dalum Papir A/S, Odense SV",
+      "location": "Denmark"
+    },
+    "6": {
+      "manufacturerCode": 6,
+      "manufacturer": "Palm Paper Ltd, King's Lynn",
+      "location": "United Kingdom"
+    },
+    "7": {
+      "manufacturerCode": 7,
+      "manufacturer": "UPM - Papeteries de Docelles",
+      "location": "France"
+    },
+    "8": {
+      "manufacturerCode": 8,
+      "manufacturer": "Santa Maria Cia de Papel e Celulose, Guarapuava",
+      "location": "Brazil"
+    },
+    "9": {
+      "manufacturerCode": 9,
+      "manufacturer": "Arctic Paper Munkedals AB, Munkedal",
+      "location": "Sweden"
+    },
+    "10": {
+      "manufacturerCode": 10,
+      "manufacturer": "ArjoWiggins Chatham Ltd., Chatham, Canterbury, Kent",
+      "location": "United Kingdom"
+    },
+    "11": {
+      "manufacturerCode": 11,
+      "manufacturer": "Nippon Daishowa Paperboard Co., Ltd., Akita Mill",
+      "location": "Japan"
+    },
+    "12": {
+      "manufacturerCode": 12,
+      "manufacturer": "Myllykoski - Madison Paper Industries, Madison, Maine",
+      "location": "USA"
+    },
+    "13": {
+      "manufacturerCode": 13,
+      "manufacturer": "BRETTON PAPER & RECYCLING Sp. z o.o., Gdynia",
+      "location": "Poland"
+    },
+    "14": {
+      "manufacturerCode": 14,
+      "manufacturer": "Marusumi Paper - Kawanoe mill, Shikoku chuou-shi",
+      "location": "Japan"
+    },
+    "15": {
+      "manufacturerCode": 15,
+      "manufacturer": "JEONGJU PAPER Corporation - Jeonju mill",
+      "location": "Korea"
+    },
+    "16": {
+      "manufacturerCode": 16,
+      "manufacturer": "JEONGJU PAPER Corporation - Cheongwon mill",
+      "location": "Korea"
+    },
+    "17": {
+      "manufacturerCode": 17,
+      "manufacturer": "Stora Enso Arapoti Industria de Papel S.A., Arapoti",
+      "location": "Brazil"
+    },
+    "18": {
+      "manufacturerCode": 18,
+      "manufacturer": "MD Papier GmbH, Plattling",
+      "location": "Germany"
+    },
+    "19": {
+      "manufacturerCode": 19,
+      "manufacturer": "Stora Enso, Nymolla, single pack",
+      "location": "Sweden"
+    },
+    "20": {
+      "manufacturerCode": 20,
+      "manufacturer": "Stora Enso, Nymolla, double pack",
+      "location": "Sweden"
+    },
+    "21": {
+      "manufacturerCode": 21,
+      "manufacturer": "PT Pabrik Kertas Tjiwi Kimia, Tbk",
+      "location": "Indonesia"
+    },
+    "22": {
+      "manufacturerCode": 22,
+      "manufacturer": "UPM Caledonian, Irvine, North Ayrshire",
+      "location": "United Kingdom"
+    },
+    "23": {
+      "manufacturerCode": 23,
+      "manufacturer": "Mosaico – Burgo Group – Chiampo",
+      "location": "Italy"
+    },
+    "24": {
+      "manufacturerCode": 24,
+      "manufacturer": "Mosaico – Burgo Group – Lugo di Vicenza",
+      "location": "Italy"
+    },
+    "25": {
+      "manufacturerCode": 25,
+      "manufacturer": "Mosaico – Burgo Group – Tolmezzo",
+      "location": "Italy"
+    },
+    "26": {
+      "manufacturerCode": 26,
+      "manufacturer": "UPM Tervasaari",
+      "location": "Finland"
+    },
+    "27": {
+      "manufacturerCode": 27,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "28": {
+      "manufacturerCode": 28,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "29": {
+      "manufacturerCode": 29,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "30": {
+      "manufacturerCode": 30,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "31": {
+      "manufacturerCode": 31,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "32": {
+      "manufacturerCode": 32,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "33": {
+      "manufacturerCode": 33,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "34": {
+      "manufacturerCode": 34,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "35": {
+      "manufacturerCode": 35,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "36": {
+      "manufacturerCode": 36,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "37": {
+      "manufacturerCode": 37,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "38": {
+      "manufacturerCode": 38,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "39": {
+      "manufacturerCode": 39,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "40": {
+      "manufacturerCode": 40,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "41": {
+      "manufacturerCode": 41,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "42": {
+      "manufacturerCode": 42,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "43": {
+      "manufacturerCode": 43,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "44": {
+      "manufacturerCode": 44,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "45": {
+      "manufacturerCode": 45,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "46": {
+      "manufacturerCode": 46,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "47": {
+      "manufacturerCode": 47,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "48": {
+      "manufacturerCode": 48,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "49": {
+      "manufacturerCode": 49,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    },
+    "50": {
+      "manufacturerCode": 50,
+      "manufacturer": "UPM Changshu",
+      "location": "China"
+    }
+  }
+}
