@@ -17,9 +17,9 @@
     main{max-width:900px;margin:auto;padding:28px 18px 60px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:22px}
     h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1;margin:5px 0 10px;letter-spacing:-.05em}.eyebrow{text-transform:uppercase;font-size:.75rem;font-weight:800;letter-spacing:.16em;color:var(--green)}
     p{margin:.35em 0;color:var(--muted)}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 20px #22332208}
-    h2{font-size:1.1rem;margin:0 0 12px}.camera{width:100%;aspect-ratio:4/3;background:#13231e;border-radius:12px;object-fit:cover;display:block}.camwrap{position:relative;overflow:hidden;border-radius:12px;background:#13231e}
+    h2{font-size:1.1rem;margin:0 0 12px}.camera{width:100%;height:100%;aspect-ratio:auto;background:#13231e;border-radius:12px;object-fit:cover;display:block}.camwrap{position:relative;overflow:hidden;border-radius:12px;background:#13231e;aspect-ratio:4/3}
     /* Quagga injects its own video and overlay canvas. Size both inside the preview. */
-    #scannerViewport video:not(.hidden){position:relative!important;display:block!important;width:100%!important;height:auto!important;max-width:100%;}
+    #scannerViewport video:not(.hidden){position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;}
     #scannerViewport canvas{position:absolute!important;inset:0;width:100%!important;height:100%!important;pointer-events:none;}
     #scannerViewport.has-live-preview video:not(#video),#scannerViewport.has-live-preview canvas{display:none!important}
     .scan-guide{position:absolute;inset:0;z-index:8;pointer-events:none;display:grid;place-items:center}
