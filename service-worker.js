@@ -1,4 +1,4 @@
-const CACHE_NAME = "ifra-scanner-v34";
+const CACHE_NAME = "ifra-scanner-v35";
 const APP_SHELL = ["./", "./index.html", "./manifest.webmanifest", "./manufacturer-codes.json", "./icons/icon.svg", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener("install", event => {
@@ -14,9 +14,12 @@ self.addEventListener("fetch", event => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
 
-  // QuaggaJS is fetched from cdnjs. Save that script on first load so camera scanning
-  // can still work after the app has been opened once while online.
-  if (url.hostname === "cdnjs.cloudflare.com" && url.pathname.includes("quagga")) {
+  // Third-party libraries needed by the scanner and OCR are cached on first use.
+  const scannerLibrary =
+    (url.hostname === "cdnjs.cloudflare.com" && url.pathname.includes("quagga")) ||
+    (url.hostname === "cdn.jsdelivr.net" && /\/(tesseract\.js|tesseract\.js-core)@/.test(url.pathname)) ||
+    url.hostname === "tessdata.projectnaptha.com";
+  if (scannerLibrary) {
     event.respondWith(caches.open(CACHE_NAME).then(async cache => {
       try {
         const response = await fetch(request);
