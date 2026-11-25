@@ -1,4 +1,4 @@
-const CACHE_NAME = "ifra-scanner-v64";
+const CACHE_NAME = "ifra-scanner-v65";
 const APP_SHELL = ["./", "./index.html", "./manifest.webmanifest", "./manufacturer-codes.json", "./icons/icon.svg", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener("install", event => {
